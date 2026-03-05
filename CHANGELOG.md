@@ -10,7 +10,7 @@
 - 优化: 鸿蒙操作系统标识识别
 - 优化: webview组件 src参数以支持默认加载
 - 优化: github action cicd引用仓库node版本
-- 修复: 影视 适配器初始化失败无具体报错信息; T3Alist和T3Catopen适配器ext参数序列化处理
+- 修复: 影视 适配器初始化失败无具体报错信息; T3Alist和T3Catopen适配器ext参数序列化处理, T3Drpy和T3Catopen缓存冲突
 - 修复: 实验室-写源工具 首次加载非js适配器时提示语法报错
 - 修复: 直播配置 上传时文件筛选参数错误
 - 修复: 同步请求模块 application/json处理错误
@@ -21,6 +21,7 @@
 - 修复: ua含有控制字符时主程序崩溃
 - 修复: 影视分类只有一个时触发folder模式时没有重置按钮
 - 修复: 部分机器判断electron环境报错
+- 修复: MacOS Tahoe(26)以下操作系统交通灯位置错位
 - 修复: 复制成功提示类型错误 info -> success
 - 修复: ui库 alert组件info颜色错误; qrcode组件样式错误
 - 变动: 参数歧义 isChinaMainland(中国大陆) -> isCHS(简体中文)
