@@ -26,7 +26,7 @@
             <pane>
               <div class="action-pane">
                 <t-tabs v-model="active.action" theme="card" lazy class="pane-right">
-                  <t-tab-panel :label="$t('pages.lab.sift.debug.dom')" value="dom">
+                  <t-tab-panel :label="$t('pages.lab.edit.debug.data')" value="data">
                     <div class="action-pane-data">
                       <div class="action-item req-item">
                         <input-req
