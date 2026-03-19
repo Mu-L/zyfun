@@ -1,6 +1,7 @@
 export default {
   action: {
     countdown: '{0}秒后关闭',
+    fullview: '全屏预览',
   },
   hot: {
     title: '热门搜索',

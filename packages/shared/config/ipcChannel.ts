@@ -103,6 +103,7 @@ export enum IPC_CHANNEL {
   WEBVIEW_SPELL_CHECK = 'webview:spell-check',
   WEBVIEW_LINK_BLOCK = 'webview:link-block',
   WEBVIEW_LINK_BLOCK_RELAY = 'webview:link-block-relay',
+  WEBVIEW_HEADER_BLOCK = 'webview:header-block',
 
   // window
   WINDOW_CLOSE = 'window:close',

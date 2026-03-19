@@ -241,6 +241,7 @@ export interface ICmsActionHelp extends ICmsActionCommon {
 export interface ICmsActionBrowser extends ICmsActionCommon {
   type: typeof CMS_ACTION_TYPE.BROWSER | typeof CMS_ACTION_TYPE.WEBVIEW;
   url: string;
+  header?: Record<string, any>;
   browserHeight?: number;
   browserWidth?: number;
 }

@@ -1,6 +1,7 @@
 export default {
   action: {
     countdown: '{0}s to close',
+    fullview: 'Full View',
   },
   hot: {
     title: 'Hot Searches',

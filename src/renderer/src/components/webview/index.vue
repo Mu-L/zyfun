@@ -15,7 +15,7 @@
 </template>
 <script setup lang="ts">
 import { IPC_CHANNEL } from '@shared/config/ipcChannel';
-import { isHttp } from '@shared/modules/validate';
+import { isHttp, isObject, isObjectEmpty } from '@shared/modules/validate';
 import type {
   DidNavigateEvent,
   DidNavigateInPageEvent,
@@ -25,7 +25,7 @@ import type {
   WebviewTag,
 } from 'electron';
 import type { PropType } from 'vue';
-import { nextTick, onMounted, onUnmounted, ref, useTemplateRef, watch } from 'vue';
+import { nextTick, onMounted, onUnmounted, ref, toRaw, useTemplateRef, watch } from 'vue';
 
 const props = defineProps({
   appid: {
@@ -35,6 +35,10 @@ const props = defineProps({
   src: {
     type: String,
     default: '',
+  },
+  headers: {
+    type: Object as PropType<Record<string, any>>,
+    default: () => ({}),
   },
   onNavigateCallback: {
     type: Function as PropType<(appid: string, url: string) => void>,
@@ -57,7 +61,7 @@ const appid = ref<string>(props.appid);
 const isWebviewLoading = ref<boolean>(false);
 const isWebviewReady = ref<boolean>(false);
 const token = ref<string>();
-const pendingUrl = ref<string>('');
+const pendingLoad = ref<{ url: string; headers?: Record<string, any> }>({ url: '', headers: undefined });
 
 watch(
   () => props.appid,
@@ -83,7 +87,7 @@ const setup = () => {
 
   window.electron.ipcRenderer.on(IPC_CHANNEL.WEBVIEW_LINK_BLOCK_RELAY, onUriBlocked);
 
-  if (isHttp(props.src)) loadUrl(props.src);
+  if (isHttp(props.src)) loadUrl(props.src, props.headers);
 };
 
 const dispose = () => {
@@ -155,21 +159,41 @@ const onDomReady = () => {
 
   isWebviewReady.value = true;
 
-  if (pendingUrl.value) {
-    loadUrl(pendingUrl.value);
-    pendingUrl.value = '';
+  if (pendingLoad.value.url) {
+    loadUrl(pendingLoad.value.url, pendingLoad.value.headers);
+    pendingLoad.value = { url: '', headers: undefined };
   }
 };
 
-const loadUrl = (url: string) => {
+// const parseHeaders = (headers?: Record<string, any>): Electron.LoadURLOptions | undefined => {
+//   if (!isObject(headers) || isObjectEmpty(headers)) return undefined;
+
+//   const result: Electron.LoadURLOptions = {};
+//   for (const key in headers) {
+//     if (['Referer', 'User-Agent'].includes(key)) {
+//       result.httpReferrer = headers[key];
+//     } else {
+//       if (!Object.hasOwn(result, 'extraHeaders')) result.extraHeaders = '';
+//       result.extraHeaders += `${key}: ${headers[key]}\n`;
+//     }
+//   }
+//   return result;
+// };
+
+const loadUrl = (url: string, headers?: Record<string, any>) => {
   if (!url) return;
   if (isWebviewReady.value) {
     const wv = webviewRef.value;
     if (!wv) return;
     if (isWebviewLoading.value) wv.stop();
+
+    if (isObject(headers) && !isObjectEmpty(headers)) {
+      window.electron.ipcRenderer.invoke(IPC_CHANNEL.WEBVIEW_HEADER_BLOCK, wv.getWebContentsId(), url, toRaw(headers));
+    }
+
     wv.loadURL(url).catch(() => {});
   } else {
-    pendingUrl.value = url;
+    pendingLoad.value = { url, headers };
   }
 };
 
