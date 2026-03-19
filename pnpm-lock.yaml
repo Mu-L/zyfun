@@ -404,8 +404,8 @@ importers:
         specifier: ^9.1.7
         version: 9.1.7
       i18next:
-        specifier: ^25.8.18
-        version: 25.8.18(typescript@5.9.3)
+        specifier: ^25.8.19
+        version: 25.8.19(typescript@5.9.3)
       iconv-lite:
         specifier: ^0.7.2
         version: 0.7.2
@@ -467,8 +467,8 @@ importers:
         specifier: ^19.6.5
         version: 19.6.5
       openai:
-        specifier: ^6.31.0
-        version: 6.31.0(ws@8.19.0(bufferutil@4.1.0)(utf-8-validate@5.0.10))(zod@3.25.76)
+        specifier: ^6.32.0
+        version: 6.32.0(ws@8.19.0(bufferutil@4.1.0)(utf-8-validate@5.0.10))(zod@3.25.76)
       p-queue:
         specifier: ^9.1.0
         version: 9.1.0
@@ -587,8 +587,8 @@ importers:
         specifier: ^5.0.3
         version: 5.0.3(@vue/compiler-sfc@3.5.30)(pinia@3.0.4(typescript@5.9.3)(vue@3.5.30(typescript@5.9.3)))(vue@3.5.30(typescript@5.9.3))
       vue-tsc:
-        specifier: ^3.2.5
-        version: 3.2.5(typescript@5.9.3)
+        specifier: ^3.2.6
+        version: 3.2.6(typescript@5.9.3)
       web-vitals:
         specifier: ^5.1.0
         version: 5.1.0
@@ -605,23 +605,23 @@ importers:
         specifier: ^8.19.0
         version: 8.19.0(bufferutil@4.1.0)(utf-8-validate@5.0.10)
       xgplayer:
-        specifier: ^3.0.23
-        version: 3.0.23(core-js@3.47.0)
+        specifier: ^3.0.24
+        version: 3.0.24(core-js@3.47.0)
       xgplayer-flv:
-        specifier: ^3.0.23
-        version: 3.0.23(core-js@3.47.0)(xgplayer@3.0.23(core-js@3.47.0))
+        specifier: ^3.0.24
+        version: 3.0.24(core-js@3.47.0)(xgplayer@3.0.24(core-js@3.47.0))
       xgplayer-hls:
-        specifier: ^3.0.23
-        version: 3.0.23(core-js@3.47.0)(xgplayer@3.0.23(core-js@3.47.0))
+        specifier: ^3.0.24
+        version: 3.0.24(core-js@3.47.0)(xgplayer@3.0.24(core-js@3.47.0))
       xgplayer-mp4:
-        specifier: ^3.0.23
-        version: 3.0.23(core-js@3.47.0)(xgplayer@3.0.23(core-js@3.47.0))
+        specifier: ^3.0.24
+        version: 3.0.24(core-js@3.47.0)(xgplayer@3.0.24(core-js@3.47.0))
       xgplayer-music:
-        specifier: ^3.0.23
-        version: 3.0.23(core-js@3.47.0)(xgplayer@3.0.23(core-js@3.47.0))
+        specifier: ^3.0.24
+        version: 3.0.24(core-js@3.47.0)(xgplayer@3.0.24(core-js@3.47.0))
       xgplayer-shaka:
-        specifier: ^3.0.23
-        version: 3.0.23(xgplayer@3.0.23(core-js@3.47.0))
+        specifier: ^3.0.24
+        version: 3.0.24(xgplayer@3.0.24(core-js@3.47.0))
       xterm-addon-search-bar:
         specifier: ^0.2.0
         version: 0.2.0(xterm-addon-search@0.5.0(xterm@4.19.0))(xterm@4.19.0)
@@ -2980,14 +2980,8 @@ packages:
     peerDependencies:
       '@babel/core': ^7.0.0-0
 
-  '@vue/compiler-core@3.5.28':
-    resolution: {integrity: sha512-kviccYxTgoE8n6OCw96BNdYlBg2GOWfBuOW4Vqwrt7mSKWKwFVvI8egdTltqRgITGPsTFYtKYfxIG8ptX2PJHQ==}
-
   '@vue/compiler-core@3.5.30':
     resolution: {integrity: sha512-s3DfdZkcu/qExZ+td75015ljzHc6vE+30cFMGRPROYjqkroYI5NV2X1yAMX9UeyBNWB9MxCfPcsjpLS11nzkkw==}
-
-  '@vue/compiler-dom@3.5.28':
-    resolution: {integrity: sha512-/1ZepxAb159jKR1btkefDP+J2xuWL5V3WtleRmxaT+K2Aqiek/Ab/+Ebrw2pPj0sdHO8ViAyyJWfhXXOP/+LQA==}
 
   '@vue/compiler-dom@3.5.30':
     resolution: {integrity: sha512-eCFYESUEVYHhiMuK4SQTldO3RYxyMR/UQL4KdGD1Yrkfdx4m/HYuZ9jSfPdA+nWJY34VWndiYdW/wZXyiPEB9g==}
@@ -3030,8 +3024,8 @@ packages:
   '@vue/devtools-shared@8.1.0':
     resolution: {integrity: sha512-h8uCb4Qs8UT8VdTT5yjY6tOJ//qH7EpxToixR0xqejR55t5OdISIg7AJ7eBkhBs8iu1qG5gY3QQNN1DF1EelAA==}
 
-  '@vue/language-core@3.2.5':
-    resolution: {integrity: sha512-d3OIxN/+KRedeM5wQ6H6NIpwS3P5gC9nmyaHgBk+rO6dIsjY+tOh4UlPpiZbAh3YtLdCGEX4M16RmsBqPmJV+g==}
+  '@vue/language-core@3.2.6':
+    resolution: {integrity: sha512-xYYYX3/aVup576tP/23sEUpgiEnujrENaoNRbaozC1/MA9I6EGFQRJb4xrt/MmUCAGlxTKL2RmT8JLTPqagCkg==}
 
   '@vue/reactivity@3.5.30':
     resolution: {integrity: sha512-179YNgKATuwj9gB+66snskRDOitDiuOZqkYia7mHKJaidOMo/WJxHKF8DuGc4V4XbYTJANlfEKb0yxTQotnx4Q==}
@@ -3046,9 +3040,6 @@ packages:
     resolution: {integrity: sha512-v+R34icapydRwbZRD0sXwtHqrQJv38JuMB4JxbOxd8NEpGLny7cncMp53W9UH/zo4j8eDHjQ1dEJXwzFQknjtQ==}
     peerDependencies:
       vue: 3.5.30
-
-  '@vue/shared@3.5.28':
-    resolution: {integrity: sha512-cfWa1fCGBxrvaHRhvV3Is0MgmrbSCxYTXCSCau2I0a1Xw1N1pHAvkWCiXPRAqjvToILvguNyEwjevUqAuBQWvQ==}
 
   '@vue/shared@3.5.30':
     resolution: {integrity: sha512-YXgQ7JjaO18NeK2K9VTbDHaFy62WrObMa6XERNfNOkAhD1F1oDSf3ZJ7K6GqabZ0BvSDHajp8qfS5Sa2I9n8uQ==}
@@ -4574,9 +4565,6 @@ packages:
     resolution: {integrity: sha512-JVUnt+DUIzu87TABbhPmNfVdBDt18BLOWjMUFJMSi/Qqg7NTYtabbvSNJGOJ7afbRuv9D/lngizHtP7QyLQ+9w==}
     engines: {node: '>=12'}
 
-  downloadjs@1.4.7:
-    resolution: {integrity: sha512-LN1gO7+u9xjU5oEScGFKvXhYf7Y/empUIIEAGBs1LzUq/rg5duiDrkuH5A2lQGd5jfMOb9X9usDa2oVXwJ0U/Q==}
-
   dplayer@https://codeload.github.com/Hiram-Wong/DPlayer/tar.gz/20fee56a188cc6397c686d4437f149dbe25894c6:
     resolution: {tarball: https://codeload.github.com/Hiram-Wong/DPlayer/tar.gz/20fee56a188cc6397c686d4437f149dbe25894c6}
     version: 1.32.7
@@ -5797,8 +5785,8 @@ packages:
     engines: {node: '>=18'}
     hasBin: true
 
-  i18next@25.8.18:
-    resolution: {integrity: sha512-lzY5X83BiL5AP77+9DydbrqkQHFN9hUzWGjqjLpPcp5ZOzuu1aSoKaU3xbBLSjWx9dAzW431y+d+aogxOZaKRA==}
+  i18next@25.8.19:
+    resolution: {integrity: sha512-Szzho7sXdv9Do6TvZIyYu+H+94xCrh60cq01DKcYH/gDjpcHimrQApUEQycxw37U7guwbTEJ07CWScGGbgs96w==}
     peerDependencies:
       typescript: ^5
     peerDependenciesMeta:
@@ -7329,8 +7317,8 @@ packages:
     resolution: {integrity: sha512-smsWv2LzFjP03xmvFoJ331ss6h+jixfA4UUV/Bsiyuu4YJPfN+FIQGOIiv4w9/+MoHkfkJ22UIaQWRVFRfH6Vw==}
     engines: {node: '>=20'}
 
-  openai@6.31.0:
-    resolution: {integrity: sha512-iqEn3QY1NnVrDOynUWA2Fjs04gzZ0m7fbwR9xZVFmcN1cqQwslMQM2sjQBNkTVFK/rrSvV78SXiBgU+Pyqz1Aw==}
+  openai@6.32.0:
+    resolution: {integrity: sha512-j3k+BjydAf8yQlcOI7WUQMQTbbF5GEIMAE2iZYCOzwwB3S2pCheaWYp+XZRNAch4jWVc52PMDGRRjutao3lLCg==}
     hasBin: true
     peerDependencies:
       ws: ^8.18.0
@@ -9377,8 +9365,8 @@ packages:
       pinia:
         optional: true
 
-  vue-tsc@3.2.5:
-    resolution: {integrity: sha512-/htfTCMluQ+P2FISGAooul8kO4JMheOTCbCy4M6dYnYYjqLe3BExZudAua6MSIKSFYQtFOYAll7XobYwcpokGA==}
+  vue-tsc@3.2.6:
+    resolution: {integrity: sha512-gYW/kWI0XrwGzd0PKc7tVB/qpdeAkIZLNZb10/InizkQjHjnT8weZ/vBarZoj4kHKbUTZT/bAVgoOr8x4NsQ/Q==}
     hasBin: true
     peerDependencies:
       typescript: '>=5.0.0'
@@ -9578,57 +9566,57 @@ packages:
     resolution: {integrity: sha512-g/eziiSUNBSsdDJtCLB8bdYEUMj4jR7AGeUo96p/3dTafgjHhpF4RiCFPiRILwjQoDXx5MqkBr4fwWtR3Ky4Wg==}
     engines: {node: '>=20'}
 
-  xgplayer-flv@3.0.23:
-    resolution: {integrity: sha512-CyjUsgSmHZt51RoA+hywFOnQ0A1ADMOdZV7KCkblqIvn/AMb0xvDzJvFDjgHK795ZauwMyTeebakYuNI0S/yDw==}
+  xgplayer-flv@3.0.24:
+    resolution: {integrity: sha512-a1ITJEyfTLUy6x11Szwmzvxn3VNTx5Ivsgpi9tXvRp0BvfqMyqmWkwyQ1SS1yfKFaZcO57QLiNAYtnKUeNLI1A==}
     peerDependencies:
       core-js: '>=3.12.1'
       xgplayer: '>=3.0.1'
 
-  xgplayer-hls@3.0.23:
-    resolution: {integrity: sha512-jpoGeStytjnzESH5CUNKCVQ3pqQjr3+qAz99Cf8CCHheqprp+PwiUcY7ewvv4YT09IGMcF3+jKptbjdtTetuEg==}
+  xgplayer-hls@3.0.24:
+    resolution: {integrity: sha512-R4saQRCnRk5zcYCFGc10BGCIWLXQ4vwjoWKJaPQEr7vGvrxMGLlWt63cmzGnL6HHSzzFna0nIe2BCDHtOQOaVw==}
     peerDependencies:
       core-js: '>=3.12.1'
-      xgplayer: 3.0.23
+      xgplayer: 3.0.24
 
-  xgplayer-mp4-loader@3.0.23:
-    resolution: {integrity: sha512-RAidVoURsu4FD/cdJY2e9sVX61jeZ+e5F48tJyoU+TufDm+gDWpJTkrBIaYRVxJdPlh1P0Z4oGVnQctAYja7iQ==}
+  xgplayer-mp4-loader@3.0.24:
+    resolution: {integrity: sha512-nK57uCuoBopZa0Wdy1vBnLoYT10ynuUjFwajxtnFNZ7vqREqsUA7JohdaVKR3HikOrzBjObjgypiY/AU5sfgwg==}
     peerDependencies:
       core-js: '>=3.12.1'
 
-  xgplayer-mp4@3.0.23:
-    resolution: {integrity: sha512-1ThVgvdVYlov9aHKSZxFUjXLiQ4NPy/bEAmEbm0bapfCHIVVqh3265AFdTaYBM1iBU5A93RiZbXvfyIqEZJJPQ==}
+  xgplayer-mp4@3.0.24:
+    resolution: {integrity: sha512-mMsJkVNh823BoIfwouse7oYg7H2BeRO9aV/82mWnqfuewmVvxTSuD+5hkztVydXVjYOFHOYnz6h/2FmPcmTUuQ==}
     peerDependencies:
       core-js: '>=3.12.1'
       xgplayer: '>=3.0.0'
 
-  xgplayer-music@3.0.23:
-    resolution: {integrity: sha512-+yzSS3jjbBSrU0yywfk+xaVnYcVBq2yGLtLKQIwthT5R6XX/e691yT5yW17A5LZOK4G94I3goInoJlTztCXJuQ==}
+  xgplayer-music@3.0.24:
+    resolution: {integrity: sha512-5Mbx7LMaZFg7hQ712I9XGRUFApbB8PJAerq9KkpiukGebL72Ur8igdiWseSE/4ClfP1OfL+4L1r3wamTBDDu0Q==}
     peerDependencies:
       core-js: '>=3.12.1'
-      xgplayer: 3.0.23
+      xgplayer: 3.0.24
 
-  xgplayer-shaka@3.0.23:
-    resolution: {integrity: sha512-mXbShfCyZ7R48HcU/p1CMPKm36Z4VmoRUJ/0+79erRN8zaSY0JwXXtT1ucgsypM+LpncwiUK7uUAxWq6YAFuFg==}
+  xgplayer-shaka@3.0.24:
+    resolution: {integrity: sha512-lovIqQU5TjttssuMRaNSIVjAaXA6YJpoU82r/OiFfYkh9RZaDDThqcIqQ8iXjjnvQZJcFvMtJ4HVgQ+YsA3EzA==}
     peerDependencies:
       xgplayer: '>3.0.0-next.0'
 
-  xgplayer-streaming-shared@3.0.23:
-    resolution: {integrity: sha512-j14MKqjSpEisd97hAV8ykg+txSkECZ3Z6AtCxZnRT4Jj0G5QRZAObAA1IIHv7wPN4tjNdtGm9odHiQOpsYYXuw==}
+  xgplayer-streaming-shared@3.0.24:
+    resolution: {integrity: sha512-6ROPxuwAIYWysF8qWMeVTHzlc+KFVhU0d79WY9B3st1RqBidEhysGqQRbwd9WHMuWePbLQv2zj6yRg7PVcdXKA==}
     peerDependencies:
       core-js: '>=3.12.1'
 
-  xgplayer-subtitles@3.0.23:
-    resolution: {integrity: sha512-deGdV75giVzfTTdG9XATmji39NHwKTpEelWt2rRx/RyXGgU2bQFp0Ft7yWaK2Uu8A/WVrP5fpxEAj4MstREMkQ==}
+  xgplayer-subtitles@3.0.24:
+    resolution: {integrity: sha512-yrHROepD9kTGWiTSxBjh+TGaK9orQOHQ1GUxWFOkQzO8BLl/pcIAqqJkHiAoP0j+eU8VdIhpb55oJRIkTTWPsA==}
     peerDependencies:
       core-js: '>=3.12.1'
 
-  xgplayer-transmuxer@3.0.23:
-    resolution: {integrity: sha512-BVI0FT96nWUwJ7cYyT2bK7CSp6PWdztgb9kO0dIcCoJUBU5yxelqoKd43luHFFAM73GyYZ0hCm/Yw/GSjQrPJA==}
+  xgplayer-transmuxer@3.0.24:
+    resolution: {integrity: sha512-Mz0+Bne2Hg/gJ8Q/NGja83QUHuPewrn6i2gVFC/DVGApzClLikNpBRe17HYoME9noj775QEFbXYXZ+W+uptHUA==}
     peerDependencies:
       core-js: '>=3.12.1'
 
-  xgplayer@3.0.23:
-    resolution: {integrity: sha512-Bn3zQfMMAZimlVG9EeIDybMcklc+6FH8Sv47KpTq4K6ofCzyhPG/KenxailDedlHmxjb5B2o+240TpJtMQ3oJA==}
+  xgplayer@3.0.24:
+    resolution: {integrity: sha512-rK3hoJ+1Pbl9PUCHgeJv1GnOQF28BKLQFTBxdvi0pHsibJeXaDUf51SLFcgNVAPN15aDYcjJgaSf7LQ0RfEFPQ==}
     peerDependencies:
       core-js: '>=3.12.1'
 
@@ -10846,14 +10834,14 @@ snapshots:
 
   '@jimp/bmp@0.16.13(@jimp/custom@0.16.13)':
     dependencies:
-      '@babel/runtime': 7.28.4
+      '@babel/runtime': 7.28.6
       '@jimp/custom': 0.16.13
       '@jimp/utils': 0.16.13
       bmp-js: 0.1.0
 
   '@jimp/core@0.16.13':
     dependencies:
-      '@babel/runtime': 7.28.4
+      '@babel/runtime': 7.28.6
       '@jimp/utils': 0.16.13
       any-base: 1.1.0
       buffer: 5.7.1
@@ -10869,14 +10857,14 @@ snapshots:
 
   '@jimp/custom@0.16.13':
     dependencies:
-      '@babel/runtime': 7.28.4
+      '@babel/runtime': 7.28.6
       '@jimp/core': 0.16.13
     transitivePeerDependencies:
       - debug
 
   '@jimp/gif@0.16.13(@jimp/custom@0.16.13)':
     dependencies:
-      '@babel/runtime': 7.28.4
+      '@babel/runtime': 7.28.6
       '@jimp/custom': 0.16.13
       '@jimp/utils': 0.16.13
       gifwrap: 0.9.4
@@ -10884,39 +10872,39 @@ snapshots:
 
   '@jimp/jpeg@0.16.13(@jimp/custom@0.16.13)':
     dependencies:
-      '@babel/runtime': 7.28.4
+      '@babel/runtime': 7.28.6
       '@jimp/custom': 0.16.13
       '@jimp/utils': 0.16.13
       jpeg-js: 0.4.4
 
   '@jimp/plugin-blit@0.16.13(@jimp/custom@0.16.13)':
     dependencies:
-      '@babel/runtime': 7.28.4
+      '@babel/runtime': 7.28.6
       '@jimp/custom': 0.16.13
       '@jimp/utils': 0.16.13
 
   '@jimp/plugin-blur@0.16.13(@jimp/custom@0.16.13)':
     dependencies:
-      '@babel/runtime': 7.28.4
+      '@babel/runtime': 7.28.6
       '@jimp/custom': 0.16.13
       '@jimp/utils': 0.16.13
 
   '@jimp/plugin-circle@0.16.13(@jimp/custom@0.16.13)':
     dependencies:
-      '@babel/runtime': 7.28.4
+      '@babel/runtime': 7.28.6
       '@jimp/custom': 0.16.13
       '@jimp/utils': 0.16.13
 
   '@jimp/plugin-color@0.16.13(@jimp/custom@0.16.13)':
     dependencies:
-      '@babel/runtime': 7.28.4
+      '@babel/runtime': 7.28.6
       '@jimp/custom': 0.16.13
       '@jimp/utils': 0.16.13
       tinycolor2: 1.6.0
 
   '@jimp/plugin-contain@0.16.13(@jimp/custom@0.16.13)(@jimp/plugin-blit@0.16.13(@jimp/custom@0.16.13))(@jimp/plugin-resize@0.16.13(@jimp/custom@0.16.13))(@jimp/plugin-scale@0.16.13(@jimp/custom@0.16.13)(@jimp/plugin-resize@0.16.13(@jimp/custom@0.16.13)))':
     dependencies:
-      '@babel/runtime': 7.28.4
+      '@babel/runtime': 7.28.6
       '@jimp/custom': 0.16.13
       '@jimp/plugin-blit': 0.16.13(@jimp/custom@0.16.13)
       '@jimp/plugin-resize': 0.16.13(@jimp/custom@0.16.13)
@@ -10925,7 +10913,7 @@ snapshots:
 
   '@jimp/plugin-cover@0.16.13(@jimp/custom@0.16.13)(@jimp/plugin-crop@0.16.13(@jimp/custom@0.16.13))(@jimp/plugin-resize@0.16.13(@jimp/custom@0.16.13))(@jimp/plugin-scale@0.16.13(@jimp/custom@0.16.13)(@jimp/plugin-resize@0.16.13(@jimp/custom@0.16.13)))':
     dependencies:
-      '@babel/runtime': 7.28.4
+      '@babel/runtime': 7.28.6
       '@jimp/custom': 0.16.13
       '@jimp/plugin-crop': 0.16.13(@jimp/custom@0.16.13)
       '@jimp/plugin-resize': 0.16.13(@jimp/custom@0.16.13)
@@ -10934,62 +10922,62 @@ snapshots:
 
   '@jimp/plugin-crop@0.16.13(@jimp/custom@0.16.13)':
     dependencies:
-      '@babel/runtime': 7.28.4
+      '@babel/runtime': 7.28.6
       '@jimp/custom': 0.16.13
       '@jimp/utils': 0.16.13
 
   '@jimp/plugin-displace@0.16.13(@jimp/custom@0.16.13)':
     dependencies:
-      '@babel/runtime': 7.28.4
+      '@babel/runtime': 7.28.6
       '@jimp/custom': 0.16.13
       '@jimp/utils': 0.16.13
 
   '@jimp/plugin-dither@0.16.13(@jimp/custom@0.16.13)':
     dependencies:
-      '@babel/runtime': 7.28.4
+      '@babel/runtime': 7.28.6
       '@jimp/custom': 0.16.13
       '@jimp/utils': 0.16.13
 
   '@jimp/plugin-fisheye@0.16.13(@jimp/custom@0.16.13)':
     dependencies:
-      '@babel/runtime': 7.28.4
+      '@babel/runtime': 7.28.6
       '@jimp/custom': 0.16.13
       '@jimp/utils': 0.16.13
 
   '@jimp/plugin-flip@0.16.13(@jimp/custom@0.16.13)(@jimp/plugin-rotate@0.16.13(@jimp/custom@0.16.13)(@jimp/plugin-blit@0.16.13(@jimp/custom@0.16.13))(@jimp/plugin-crop@0.16.13(@jimp/custom@0.16.13))(@jimp/plugin-resize@0.16.13(@jimp/custom@0.16.13)))':
     dependencies:
-      '@babel/runtime': 7.28.4
+      '@babel/runtime': 7.28.6
       '@jimp/custom': 0.16.13
       '@jimp/plugin-rotate': 0.16.13(@jimp/custom@0.16.13)(@jimp/plugin-blit@0.16.13(@jimp/custom@0.16.13))(@jimp/plugin-crop@0.16.13(@jimp/custom@0.16.13))(@jimp/plugin-resize@0.16.13(@jimp/custom@0.16.13))
       '@jimp/utils': 0.16.13
 
   '@jimp/plugin-gaussian@0.16.13(@jimp/custom@0.16.13)':
     dependencies:
-      '@babel/runtime': 7.28.4
+      '@babel/runtime': 7.28.6
       '@jimp/custom': 0.16.13
       '@jimp/utils': 0.16.13
 
   '@jimp/plugin-invert@0.16.13(@jimp/custom@0.16.13)':
     dependencies:
-      '@babel/runtime': 7.28.4
+      '@babel/runtime': 7.28.6
       '@jimp/custom': 0.16.13
       '@jimp/utils': 0.16.13
 
   '@jimp/plugin-mask@0.16.13(@jimp/custom@0.16.13)':
     dependencies:
-      '@babel/runtime': 7.28.4
+      '@babel/runtime': 7.28.6
       '@jimp/custom': 0.16.13
       '@jimp/utils': 0.16.13
 
   '@jimp/plugin-normalize@0.16.13(@jimp/custom@0.16.13)':
     dependencies:
-      '@babel/runtime': 7.28.4
+      '@babel/runtime': 7.28.6
       '@jimp/custom': 0.16.13
       '@jimp/utils': 0.16.13
 
   '@jimp/plugin-print@0.16.13(@jimp/custom@0.16.13)(@jimp/plugin-blit@0.16.13(@jimp/custom@0.16.13))':
     dependencies:
-      '@babel/runtime': 7.28.4
+      '@babel/runtime': 7.28.6
       '@jimp/custom': 0.16.13
       '@jimp/plugin-blit': 0.16.13(@jimp/custom@0.16.13)
       '@jimp/utils': 0.16.13
@@ -10999,13 +10987,13 @@ snapshots:
 
   '@jimp/plugin-resize@0.16.13(@jimp/custom@0.16.13)':
     dependencies:
-      '@babel/runtime': 7.28.4
+      '@babel/runtime': 7.28.6
       '@jimp/custom': 0.16.13
       '@jimp/utils': 0.16.13
 
   '@jimp/plugin-rotate@0.16.13(@jimp/custom@0.16.13)(@jimp/plugin-blit@0.16.13(@jimp/custom@0.16.13))(@jimp/plugin-crop@0.16.13(@jimp/custom@0.16.13))(@jimp/plugin-resize@0.16.13(@jimp/custom@0.16.13))':
     dependencies:
-      '@babel/runtime': 7.28.4
+      '@babel/runtime': 7.28.6
       '@jimp/custom': 0.16.13
       '@jimp/plugin-blit': 0.16.13(@jimp/custom@0.16.13)
       '@jimp/plugin-crop': 0.16.13(@jimp/custom@0.16.13)
@@ -11014,14 +11002,14 @@ snapshots:
 
   '@jimp/plugin-scale@0.16.13(@jimp/custom@0.16.13)(@jimp/plugin-resize@0.16.13(@jimp/custom@0.16.13))':
     dependencies:
-      '@babel/runtime': 7.28.4
+      '@babel/runtime': 7.28.6
       '@jimp/custom': 0.16.13
       '@jimp/plugin-resize': 0.16.13(@jimp/custom@0.16.13)
       '@jimp/utils': 0.16.13
 
   '@jimp/plugin-shadow@0.16.13(@jimp/custom@0.16.13)(@jimp/plugin-blur@0.16.13(@jimp/custom@0.16.13))(@jimp/plugin-resize@0.16.13(@jimp/custom@0.16.13))':
     dependencies:
-      '@babel/runtime': 7.28.4
+      '@babel/runtime': 7.28.6
       '@jimp/custom': 0.16.13
       '@jimp/plugin-blur': 0.16.13(@jimp/custom@0.16.13)
       '@jimp/plugin-resize': 0.16.13(@jimp/custom@0.16.13)
@@ -11029,7 +11017,7 @@ snapshots:
 
   '@jimp/plugin-threshold@0.16.13(@jimp/custom@0.16.13)(@jimp/plugin-color@0.16.13(@jimp/custom@0.16.13))(@jimp/plugin-resize@0.16.13(@jimp/custom@0.16.13))':
     dependencies:
-      '@babel/runtime': 7.28.4
+      '@babel/runtime': 7.28.6
       '@jimp/custom': 0.16.13
       '@jimp/plugin-color': 0.16.13(@jimp/custom@0.16.13)
       '@jimp/plugin-resize': 0.16.13(@jimp/custom@0.16.13)
@@ -11037,7 +11025,7 @@ snapshots:
 
   '@jimp/plugins@0.16.13(@jimp/custom@0.16.13)':
     dependencies:
-      '@babel/runtime': 7.28.4
+      '@babel/runtime': 7.28.6
       '@jimp/custom': 0.16.13
       '@jimp/plugin-blit': 0.16.13(@jimp/custom@0.16.13)
       '@jimp/plugin-blur': 0.16.13(@jimp/custom@0.16.13)
@@ -11066,20 +11054,20 @@ snapshots:
 
   '@jimp/png@0.16.13(@jimp/custom@0.16.13)':
     dependencies:
-      '@babel/runtime': 7.28.4
+      '@babel/runtime': 7.28.6
       '@jimp/custom': 0.16.13
       '@jimp/utils': 0.16.13
       pngjs: 3.4.0
 
   '@jimp/tiff@0.16.13(@jimp/custom@0.16.13)':
     dependencies:
-      '@babel/runtime': 7.28.4
+      '@babel/runtime': 7.28.6
       '@jimp/custom': 0.16.13
       utif: 2.0.1
 
   '@jimp/types@0.16.13(@jimp/custom@0.16.13)':
     dependencies:
-      '@babel/runtime': 7.28.4
+      '@babel/runtime': 7.28.6
       '@jimp/bmp': 0.16.13(@jimp/custom@0.16.13)
       '@jimp/custom': 0.16.13
       '@jimp/gif': 0.16.13(@jimp/custom@0.16.13)
@@ -11090,7 +11078,7 @@ snapshots:
 
   '@jimp/utils@0.16.13':
     dependencies:
-      '@babel/runtime': 7.28.4
+      '@babel/runtime': 7.28.6
       regenerator-runtime: 0.13.11
 
   '@jridgewell/gen-mapping@0.3.13':
@@ -11983,8 +11971,8 @@ snapshots:
 
   '@typescript-eslint/project-service@8.56.1(typescript@5.9.3)':
     dependencies:
-      '@typescript-eslint/tsconfig-utils': 8.57.0(typescript@5.9.3)
-      '@typescript-eslint/types': 8.57.0
+      '@typescript-eslint/tsconfig-utils': 8.57.1(typescript@5.9.3)
+      '@typescript-eslint/types': 8.57.1
       debug: 4.4.3
       typescript: 5.9.3
     transitivePeerDependencies:
@@ -12415,14 +12403,6 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@vue/compiler-core@3.5.28':
-    dependencies:
-      '@babel/parser': 7.29.0
-      '@vue/shared': 3.5.28
-      entities: 7.0.1
-      estree-walker: 2.0.2
-      source-map-js: 1.2.1
-
   '@vue/compiler-core@3.5.30':
     dependencies:
       '@babel/parser': 7.29.0
@@ -12430,11 +12410,6 @@ snapshots:
       entities: 7.0.1
       estree-walker: 2.0.2
       source-map-js: 1.2.1
-
-  '@vue/compiler-dom@3.5.28':
-    dependencies:
-      '@vue/compiler-core': 3.5.28
-      '@vue/shared': 3.5.28
 
   '@vue/compiler-dom@3.5.30':
     dependencies:
@@ -12511,11 +12486,11 @@ snapshots:
 
   '@vue/devtools-shared@8.1.0': {}
 
-  '@vue/language-core@3.2.5':
+  '@vue/language-core@3.2.6':
     dependencies:
       '@volar/language-core': 2.4.28
-      '@vue/compiler-dom': 3.5.28
-      '@vue/shared': 3.5.28
+      '@vue/compiler-dom': 3.5.30
+      '@vue/shared': 3.5.30
       alien-signals: 3.1.2
       muggle-string: 0.4.1
       path-browserify: 1.0.1
@@ -12542,8 +12517,6 @@ snapshots:
       '@vue/compiler-ssr': 3.5.30
       '@vue/shared': 3.5.30
       vue: 3.5.30(typescript@5.9.3)
-
-  '@vue/shared@3.5.28': {}
 
   '@vue/shared@3.5.30': {}
 
@@ -14300,8 +14273,6 @@ snapshots:
 
   dotenv@17.2.3: {}
 
-  downloadjs@1.4.7: {}
-
   dplayer@https://codeload.github.com/Hiram-Wong/DPlayer/tar.gz/20fee56a188cc6397c686d4437f149dbe25894c6(patch_hash=fedf116778d9bc62e79aff98a7f695c38b86d9b864696529dff54145b2d2ab35):
     dependencies:
       aribb24.js: 1.11.5
@@ -15698,7 +15669,7 @@ snapshots:
 
   husky@9.1.7: {}
 
-  i18next@25.8.18(typescript@5.9.3):
+  i18next@25.8.19(typescript@5.9.3):
     dependencies:
       '@babel/runtime': 7.28.6
     optionalDependencies:
@@ -17514,7 +17485,7 @@ snapshots:
       powershell-utils: 0.1.0
       wsl-utils: 0.3.1
 
-  openai@6.31.0(ws@8.19.0(bufferutil@4.1.0)(utf-8-validate@5.0.10))(zod@3.25.76):
+  openai@6.32.0(ws@8.19.0(bufferutil@4.1.0)(utf-8-validate@5.0.10))(zod@3.25.76):
     optionalDependencies:
       ws: 8.19.0(bufferutil@4.1.0)(utf-8-validate@5.0.10)
       zod: 3.25.76
@@ -19202,7 +19173,7 @@ snapshots:
 
   tdesign-icons-web-components@0.3.2(omi@7.7.13):
     dependencies:
-      '@babel/runtime': 7.28.4
+      '@babel/runtime': 7.28.6
       clsx: 2.1.1
       omi: 7.7.13
       tailwind-merge: 2.6.0
@@ -19933,10 +19904,10 @@ snapshots:
       '@vue/compiler-sfc': 3.5.30
       pinia: 3.0.4(typescript@5.9.3)(vue@3.5.30(typescript@5.9.3))
 
-  vue-tsc@3.2.5(typescript@5.9.3):
+  vue-tsc@3.2.6(typescript@5.9.3):
     dependencies:
       '@volar/typescript': 2.4.28
-      '@vue/language-core': 3.2.5
+      '@vue/language-core': 3.2.6
       typescript: 5.9.3
 
   vue@3.5.30(typescript@5.9.3):
@@ -20186,77 +20157,76 @@ snapshots:
       is-wsl: 3.1.0
       powershell-utils: 0.1.0
 
-  xgplayer-flv@3.0.23(core-js@3.47.0)(xgplayer@3.0.23(core-js@3.47.0)):
+  xgplayer-flv@3.0.24(core-js@3.47.0)(xgplayer@3.0.24(core-js@3.47.0)):
     dependencies:
       core-js: 3.47.0
       eventemitter3: 4.0.7
-      xgplayer: 3.0.23(core-js@3.47.0)
-      xgplayer-streaming-shared: 3.0.23(core-js@3.47.0)
-      xgplayer-transmuxer: 3.0.23(core-js@3.47.0)
+      xgplayer: 3.0.24(core-js@3.47.0)
+      xgplayer-streaming-shared: 3.0.24(core-js@3.47.0)
+      xgplayer-transmuxer: 3.0.24(core-js@3.47.0)
 
-  xgplayer-hls@3.0.23(core-js@3.47.0)(xgplayer@3.0.23(core-js@3.47.0)):
+  xgplayer-hls@3.0.24(core-js@3.47.0)(xgplayer@3.0.24(core-js@3.47.0)):
     dependencies:
       core-js: 3.47.0
       eventemitter3: 4.0.7
-      xgplayer: 3.0.23(core-js@3.47.0)
-      xgplayer-streaming-shared: 3.0.23(core-js@3.47.0)
-      xgplayer-transmuxer: 3.0.23(core-js@3.47.0)
+      xgplayer: 3.0.24(core-js@3.47.0)
+      xgplayer-streaming-shared: 3.0.24(core-js@3.47.0)
+      xgplayer-transmuxer: 3.0.24(core-js@3.47.0)
 
-  xgplayer-mp4-loader@3.0.23(core-js@3.47.0):
+  xgplayer-mp4-loader@3.0.24(core-js@3.47.0):
     dependencies:
       core-js: 3.47.0
       eventemitter3: 4.0.7
-      xgplayer-streaming-shared: 3.0.23(core-js@3.47.0)
-      xgplayer-transmuxer: 3.0.23(core-js@3.47.0)
+      xgplayer-streaming-shared: 3.0.24(core-js@3.47.0)
+      xgplayer-transmuxer: 3.0.24(core-js@3.47.0)
 
-  xgplayer-mp4@3.0.23(core-js@3.47.0)(xgplayer@3.0.23(core-js@3.47.0)):
+  xgplayer-mp4@3.0.24(core-js@3.47.0)(xgplayer@3.0.24(core-js@3.47.0)):
     dependencies:
       concat-typed-array: 1.0.2
       core-js: 3.47.0
       deepmerge: 2.2.1
       eventemitter3: 4.0.7
-      xgplayer: 3.0.23(core-js@3.47.0)
-      xgplayer-mp4-loader: 3.0.23(core-js@3.47.0)
-      xgplayer-streaming-shared: 3.0.23(core-js@3.47.0)
-      xgplayer-transmuxer: 3.0.23(core-js@3.47.0)
+      xgplayer: 3.0.24(core-js@3.47.0)
+      xgplayer-mp4-loader: 3.0.24(core-js@3.47.0)
+      xgplayer-streaming-shared: 3.0.24(core-js@3.47.0)
+      xgplayer-transmuxer: 3.0.24(core-js@3.47.0)
 
-  xgplayer-music@3.0.23(core-js@3.47.0)(xgplayer@3.0.23(core-js@3.47.0)):
+  xgplayer-music@3.0.24(core-js@3.47.0)(xgplayer@3.0.24(core-js@3.47.0)):
     dependencies:
       core-js: 3.47.0
       deepmerge: 2.2.1
       eventemitter3: 4.0.7
-      xgplayer: 3.0.23(core-js@3.47.0)
+      xgplayer: 3.0.24(core-js@3.47.0)
 
-  xgplayer-shaka@3.0.23(xgplayer@3.0.23(core-js@3.47.0)):
+  xgplayer-shaka@3.0.24(xgplayer@3.0.24(core-js@3.47.0)):
     dependencies:
       shaka-player: 2.5.23
-      xgplayer: 3.0.23(core-js@3.47.0)
+      xgplayer: 3.0.24(core-js@3.47.0)
 
-  xgplayer-streaming-shared@3.0.23(core-js@3.47.0):
+  xgplayer-streaming-shared@3.0.24(core-js@3.47.0):
     dependencies:
       core-js: 3.47.0
       eventemitter3: 4.0.7
 
-  xgplayer-subtitles@3.0.23(core-js@3.47.0):
+  xgplayer-subtitles@3.0.24(core-js@3.47.0):
     dependencies:
       core-js: 3.47.0
       eventemitter3: 4.0.7
 
-  xgplayer-transmuxer@3.0.23(core-js@3.47.0):
+  xgplayer-transmuxer@3.0.24(core-js@3.47.0):
     dependencies:
-      '@babel/runtime': 7.28.4
+      '@babel/runtime': 7.28.6
       concat-typed-array: 1.0.2
       core-js: 3.47.0
       crypto-es: 1.2.7
 
-  xgplayer@3.0.23(core-js@3.47.0):
+  xgplayer@3.0.24(core-js@3.47.0):
     dependencies:
       core-js: 3.47.0
       danmu.js: 1.2.1
       delegate: 3.2.0
-      downloadjs: 1.4.7
       eventemitter3: 4.0.7
-      xgplayer-subtitles: 3.0.23(core-js@3.47.0)
+      xgplayer-subtitles: 3.0.24(core-js@3.47.0)
 
   xhr@2.6.0:
     dependencies:
