@@ -53,8 +53,9 @@ const props = defineProps({
 const emits = defineEmits(['submit']);
 
 import { IPC_CHANNEL } from '@shared/config/ipcChannel';
-import type { IAuthCert, IAuthRelayPayload, IAuthSendPayload } from '@shared/types/auth';
+import type { IAuthCert, IAuthSendPayload } from '@shared/types/auth';
 import type { FormInstanceFunctions, SubmitContext } from 'tdesign-vue-next';
+import { MessagePlugin } from 'tdesign-vue-next';
 import { onMounted, ref, toRaw, useTemplateRef } from 'vue';
 
 import { t } from '@/locales';
@@ -71,7 +72,7 @@ const formData = ref<IAuthCert>({
   username: '',
   password: '',
 });
-const authPayload = ref<IAuthRelayPayload | null>(null);
+const authPayload = ref<IAuthSendPayload | null>(null);
 
 onMounted(() => setup());
 
@@ -91,7 +92,7 @@ const handleExecute = () => {
   const authPayloadRaw = toRaw(authPayload.value);
   const authCert: IAuthCert = { username, password };
 
-  const doc: IAuthSendPayload = { ...authPayloadRaw, authCert };
+  const doc = { ...authPayloadRaw, authCert };
 
   window.electron.ipcRenderer.send(IPC_CHANNEL.LOGIN_BASIC_RELAY, doc);
   emits('submit', doc);

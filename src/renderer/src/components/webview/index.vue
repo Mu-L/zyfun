@@ -19,7 +19,7 @@ import { IPC_CHANNEL } from '@shared/config/ipcChannel';
 import { base64 } from '@shared/modules/crypto';
 import { headersPascalCase } from '@shared/modules/headers';
 import { isHttp, isObject, isObjectEmpty } from '@shared/modules/validate';
-import type { IAuthSendPayload } from '@shared/types/auth';
+import type { IAuthRelayPayload } from '@shared/types/auth';
 import type {
   DidNavigateEvent,
   DidNavigateInPageEvent,
@@ -186,7 +186,7 @@ const onDomReady = () => {
 //   return result;
 // };
 
-const handleAuthSubmit = (payload: IAuthSendPayload) => {
+const handleAuthSubmit = (payload: IAuthRelayPayload) => {
   const { authInfo, authCert, url } = payload;
   const { scheme } = authInfo;
   const { username, password } = authCert;
