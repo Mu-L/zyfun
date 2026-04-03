@@ -53,6 +53,10 @@ export enum IPC_CHANNEL {
 
   INSTALL_UV_BINARY = 'app:install-uv-binary',
 
+  // login
+  LOGIN_BASIC = 'login:basic',
+  LOGIN_BASIC_RELAY = 'login:basic-relay',
+
   // logger
   APP_LOG_TO_MAIN = 'app:log-to-main',
 

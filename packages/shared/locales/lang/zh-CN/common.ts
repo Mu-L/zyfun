@@ -107,6 +107,9 @@ export default {
   connect: '连接',
   reconnect: '重连',
   adapter: '适配器',
+  auth: '认证',
+  username: '用户名',
+  password: '密码',
   request: {
     title: '请求',
     param: '请求参数',

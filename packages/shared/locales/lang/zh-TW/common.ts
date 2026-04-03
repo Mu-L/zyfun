@@ -107,6 +107,9 @@ export default {
   connect: '連接',
   reconnect: '重連',
   adapter: '適配器',
+  auth: '認證',
+  username: '用戶名',
+  password: '密碼',
   request: {
     title: '請求',
     param: '請求參數',

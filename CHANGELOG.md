@@ -5,6 +5,7 @@
 ## 3.4.4
 
 - 特性: 支持搜索联想
+- 特性: 支持login事件(basic-auth)
 - 修复: windows x64平台调用npminstall失败
 - 修复: cms接口返回url数组时无法正确处理
 - 修复: webview组件 缺失请求头加载方法

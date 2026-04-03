@@ -10,12 +10,16 @@
       partition="persist:webview"
       class="webview"
     />
-    <t-loading attach=".webview-container" size="medium" :loading="isWebviewLoading" />
+    <t-loading attach=".webview-container" size="medium" :loading="isWebviewLoading" :z-index="3500" />
+    <auth attach=".webview-container" :z-index="3600" @submit="handleAuthSubmit" />
   </div>
 </template>
 <script setup lang="ts">
 import { IPC_CHANNEL } from '@shared/config/ipcChannel';
+import { base64 } from '@shared/modules/crypto';
+import { headersPascalCase } from '@shared/modules/headers';
 import { isHttp, isObject, isObjectEmpty } from '@shared/modules/validate';
+import type { IAuthSendPayload } from '@shared/types/auth';
 import type {
   DidNavigateEvent,
   DidNavigateInPageEvent,
@@ -26,6 +30,8 @@ import type {
 } from 'electron';
 import type { PropType } from 'vue';
 import { nextTick, onMounted, onUnmounted, ref, toRaw, useTemplateRef, watch } from 'vue';
+
+import Auth from './components/Auth.vue';
 
 const props = defineProps({
   appid: {
@@ -179,6 +185,20 @@ const onDomReady = () => {
 //   }
 //   return result;
 // };
+
+const handleAuthSubmit = (payload: IAuthSendPayload) => {
+  const { authInfo, authCert, url } = payload;
+  const { scheme } = authInfo;
+  const { username, password } = authCert;
+
+  if (!scheme || !['basic'].includes(scheme.toLowerCase())) return;
+
+  const headers = headersPascalCase(props.headers);
+  if (!headers.Authorization) return;
+  headers.Authorization = `Basic ${base64.encode({ src: `${username}:${password}` })}`;
+
+  loadUrl(url, headers);
+};
 
 const loadUrl = (url: string, headers?: Record<string, any>) => {
   if (!url) return;

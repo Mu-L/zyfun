@@ -107,6 +107,9 @@ export default {
   connect: 'Connect',
   reconnect: 'Reconnect',
   adapter: 'Adapter',
+  auth: 'Auth',
+  username: 'Username',
+  password: 'Password',
   request: {
     title: 'Request',
     param: 'Parameters',
