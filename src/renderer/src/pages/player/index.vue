@@ -110,6 +110,11 @@ const setup = () => {
     window.electron.ipcRenderer.send(IPC_CHANNEL.WINDOW_DESTROY_RELAY);
   });
 
+  window.electron.ipcRenderer.on(IPC_CHANNEL.MEDIA_PAUSE, (_event, status) => {
+    console.log('MEDIA_PAUSE', status);
+    status === true ? playerRef.value?.pause() : playerRef.value?.play();
+  });
+
   document.title = `${APP_NAME}(${t('pages.player.title')})`;
 };
 

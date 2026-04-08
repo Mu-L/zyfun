@@ -200,7 +200,6 @@ export class WindowService {
       mainWindow.setFullScreen(false);
     }
 
-    mainWindow.webContents.setAudioMuted(false);
     mainWindow.show();
     mainWindow.focus();
 
@@ -220,8 +219,6 @@ export class WindowService {
     if (!mainWindow || mainWindow.isDestroyed()) {
       return;
     }
-
-    mainWindow.webContents.setAudioMuted(true);
 
     // [macOs/Windows] hacky fix
     // previous window(not self-app) should be focused again after miniWindow hide
