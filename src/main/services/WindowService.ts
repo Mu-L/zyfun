@@ -329,7 +329,7 @@ export class WindowService {
       const currentTime = Date.now();
       const mainWindowName = this.getWindowName(mainWindow)!;
       const lastCrashTime = this.winPool.get(mainWindowName)?.lastCrashTime || 0;
-      this.winPool.set(mainWindowName, { window: mainWindow, lastCrashTime });
+      this.winPool.set(mainWindowName, { window: mainWindow, lastCrashTime: currentTime });
       if (currentTime - lastCrashTime > 60 * 1000) {
         // If greater than 1 minute, restart the rendering process
         mainWindow.webContents.reload();
