@@ -37,7 +37,7 @@ import type { FastifyPluginAsync, FastifyRequest } from 'fastify';
 import JSON5 from 'json5';
 
 import { prepare } from './utils/cache';
-import { formatEpisode, formatInfoContent } from './utils/cms';
+import { formatCategories, formatEpisode, formatInfoContent } from './utils/cms';
 
 const API_PREFIX = 'film/cms';
 
@@ -68,16 +68,7 @@ const api: FastifyPluginAsync = async (fastify): Promise<void> => {
 
       const source = await dbService.site.get(uuid);
 
-      const categories = source.categories
-        ? [
-            ...new Set(
-              source.categories
-                .split(/[,，]/)
-                .map((c) => c.trim())
-                .filter(Boolean),
-            ),
-          ]
-        : [];
+      const categories = formatCategories(source.categories || '');
 
       const rawClassList = Array.isArray(resp?.class) ? resp?.class : [];
       const classes = rawClassList
