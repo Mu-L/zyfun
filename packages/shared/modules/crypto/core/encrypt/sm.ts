@@ -4,7 +4,7 @@ import type { Sm4Options } from '../../type';
 import {
   arrayToWordArray,
   parse as wordParse,
-  stringify as wordStringify,
+  stringify as wordArrayStringify,
   wordArrayToArray,
 } from '../../utils/wordArray';
 
@@ -112,12 +112,12 @@ export const sm4 = {
 
     if (mode.toLowerCase() === 'gcm') {
       const gcmResult = encrypted as IGCMResult;
-      const output = wordStringify[outputEncode](arrayToWordArray(gcmResult.output));
-      const tag = wordStringify[tagEncode](arrayToWordArray(gcmResult.tag!));
+      const output = wordArrayStringify[outputEncode](arrayToWordArray(gcmResult.output));
+      const tag = wordArrayStringify[tagEncode](arrayToWordArray(gcmResult.tag!));
       return `${output}\nTag:${tag}`;
     }
 
-    return wordStringify[outputEncode](arrayToWordArray(encrypted as unknown as Uint8Array));
+    return wordArrayStringify[outputEncode](arrayToWordArray(encrypted as unknown as Uint8Array));
   },
   /**
    * SM4 解密方法
@@ -186,6 +186,6 @@ export const sm4 = {
       ...(mode.toLowerCase() === 'gcm' && tagBuffer ? { tag: wordArrayToArray(tagBuffer) } : {}),
     } as any);
 
-    return wordStringify[outputEncode](arrayToWordArray(decrypted as unknown as Uint8Array));
+    return wordArrayStringify[outputEncode](arrayToWordArray(decrypted as unknown as Uint8Array));
   },
 };
