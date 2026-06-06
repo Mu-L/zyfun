@@ -346,6 +346,7 @@ const active = ref({
   analyzeId: '',
   filmIndex: '',
   filmSource: '',
+  transitioning: false,
 });
 
 const preload = ref({
@@ -385,7 +386,9 @@ watch(
 );
 watch(
   () => props.process,
-  (val) => (processConf.value = val),
+  (val) => {
+    if (!active.value.transitioning) processConf.value = val;
+  },
 );
 watch(
   () => processConf.value,
@@ -590,6 +593,13 @@ const handleSwitchLine = (id: string) => {
 };
 
 const handleSwitchSeason = async (item: ICmsInfoEpisode) => {
+  active.value.transitioning = true;
+
+  processConf.value = {
+    currentTime: 0,
+    duration: 0,
+  };
+
   active.value.filmIndex = `${item.text}$${item.link}`;
   active.value.watch = false;
 
@@ -603,6 +613,10 @@ const handleSwitchSeason = async (item: ICmsInfoEpisode) => {
   }
 
   await callPlay(item);
+
+  setTimeout(() => {
+    active.value.transitioning = false;
+  }, 0);
 };
 
 const handleSwitchParse = async (id: string) => {
