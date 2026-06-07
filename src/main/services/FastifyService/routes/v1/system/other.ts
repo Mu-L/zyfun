@@ -23,6 +23,7 @@ import { isHttp, isJsonStr, isNil } from '@shared/modules/validate';
 import type { AxiosRequestConfig } from 'axios';
 import type { FastifyPluginAsync } from 'fastify';
 import iconv from 'iconv-lite';
+import JSON5 from 'json5';
 
 import { checkM3u8, fixAdM3u8Ai } from './utils/m3u8';
 
@@ -208,7 +209,7 @@ const api: FastifyPluginAsync = async (fastify): Promise<void> => {
       const linesplitter = readline.createInterface({ input: tail });
       linesplitter.on('line', (line) => {
         try {
-          const obj = JSON.parse(line);
+          const obj = JSON5.parse(line);
           if (LEVEL_MAP[obj.level] < minLevel) return;
           if (!type.includes(obj.module) && type.length !== 0) return;
 
