@@ -4,7 +4,7 @@ import { loggerService } from '@logger';
 import { createDir, fileDelete, pathExist, saveFile } from '@main/utils/file';
 import { APP_EXE_PATH, APP_HOME_PATH } from '@main/utils/path';
 import { isLinux, isMacOS, isWindows } from '@main/utils/systeminfo';
-import { APP_DESC, APP_NAME } from '@shared/config/appinfo';
+import { APP_DESC, APP_NAME } from '@shared/config/appInfo';
 import { LOG_MODULE } from '@shared/config/logger';
 import { app } from 'electron';
 
