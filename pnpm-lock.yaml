@@ -171,9 +171,6 @@ importers:
       '@types/fs-extra':
         specifier: ^11.0.4
         version: 11.0.4
-      '@types/js-yaml':
-        specifier: ^4.0.9
-        version: 4.0.9
       '@types/jsdom':
         specifier: ^28.0.3
         version: 28.0.3
@@ -393,9 +390,6 @@ importers:
       jest-styled-components:
         specifier: ^7.4.0
         version: 7.4.0(styled-components@6.4.2(react@19.2.7))
-      js-yaml:
-        specifier: 5.1.0
-        version: 5.1.0
       json5:
         specifier: ^2.2.3
         version: 2.2.3
@@ -588,6 +582,9 @@ importers:
       xterm-addon-search-bar:
         specifier: github:Hiram-Wong/xterm-addon-search-bar#1e7ac43d4fe6bab48abacb38685d66357bc6c6dd
         version: https://codeload.github.com/Hiram-Wong/xterm-addon-search-bar/tar.gz/1e7ac43d4fe6bab48abacb38685d66357bc6c6dd(@xterm/addon-search@0.17.0-beta.287(@xterm/xterm@6.1.0-beta.287))(@xterm/xterm@6.1.0-beta.287)
+      yaml:
+        specifier: ^2.9.0
+        version: 2.9.0
     optionalDependencies:
       '@libsql/darwin-arm64':
         specifier: 0.4.7
@@ -2846,9 +2843,6 @@ packages:
 
   '@types/http-cache-semantics@4.2.0':
     resolution: {integrity: sha512-L3LgimLHXtGkWikKnsPg0/VFx9OGZaC+eN1u4r+OB1XRqH3meBIAVC2zr1WdMH+RHmnRkqliQAOHNJ/E0j/e0Q==}
-
-  '@types/js-yaml@4.0.9':
-    resolution: {integrity: sha512-k4MGaQl5TGo/iipqb2UDG2UwjXziSWkh0uysQelTlJpX1qGlpUZYm8PnO4DxG1qBomtJUdYJ6qR6xdIah10JLg==}
 
   '@types/jsdom@28.0.3':
     resolution: {integrity: sha512-/HQ2uFoetFTXuye8vzIcHw2z6Fwi7Hi/qcgC+RoS9NCyewiqxhVGqlG+ViGB6lkax481R6dmhf1I7lIGlzJStQ==}
@@ -6303,10 +6297,6 @@ packages:
 
   js-yaml@4.2.0:
     resolution: {integrity: sha512-ePWsvanv0DWuDRsW8dnt+R4jQ31SCRCQ7hhNcPXZPsoBZiemuZNYGf7adZdqX2D86j6rvKp3RpCxVTSb8WQlOw==}
-    hasBin: true
-
-  js-yaml@5.1.0:
-    resolution: {integrity: sha512-s8VA5jkR8f22S3NAXmhKPFqGUduqZGlsufabVOgN14iTdw/RXcym7bKkbwjxLK9Yw2lEvvmJjFp119+KPeo8Kg==}
     hasBin: true
 
   jsbn@0.1.1:
@@ -12201,8 +12191,6 @@ snapshots:
 
   '@types/http-cache-semantics@4.2.0': {}
 
-  '@types/js-yaml@4.0.9': {}
-
   '@types/jsdom@28.0.3':
     dependencies:
       '@types/node': 24.10.4
@@ -16038,10 +16026,6 @@ snapshots:
       esprima: 4.0.1
 
   js-yaml@4.2.0:
-    dependencies:
-      argparse: 2.0.1
-
-  js-yaml@5.1.0:
     dependencies:
       argparse: 2.0.1
 

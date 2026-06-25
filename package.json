@@ -108,7 +108,6 @@
     "@types/electron-localshortcut": "^3",
     "@types/fluent-ffmpeg": "^2.1.28",
     "@types/fs-extra": "^11.0.4",
-    "@types/js-yaml": "^4.0.9",
     "@types/jsdom": "^28.0.3",
     "@types/minimist": "^1",
     "@types/node": "24.10.4",
@@ -182,7 +181,6 @@
     "ipaddr.js": "^2.4.0",
     "isomorphic-ws": "^5.0.0",
     "jest-styled-components": "^7.4.0",
-    "js-yaml": "5.1.0",
     "json5": "^2.2.3",
     "jsonpath-plus": "^10.4.0",
     "less": "^4.6.7",
@@ -246,7 +244,8 @@
     "xgplayer-music": "^3.0.24",
     "xgplayer-shaka": "^3.0.24",
     "xgplayer-subtitles": "^3.0.24",
-    "xterm-addon-search-bar": "github:Hiram-Wong/xterm-addon-search-bar#1e7ac43d4fe6bab48abacb38685d66357bc6c6dd"
+    "xterm-addon-search-bar": "github:Hiram-Wong/xterm-addon-search-bar#1e7ac43d4fe6bab48abacb38685d66357bc6c6dd",
+    "yaml": "^2.9.0"
   },
   "optionalDependencies": {
     "@libsql/darwin-arm64": "0.4.7",
